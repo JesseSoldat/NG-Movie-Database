@@ -6,17 +6,20 @@ import { RouterModule, Router, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MoviesComponent } from './components/movies.component';
+import { MovieComponent } from './components/movie.component';
 
 import { MovieService } from './services/movie.service';
 
 export const routes: Routes = [
-  { path: '', component: MoviesComponent}
+  { path: '', component: MoviesComponent},
+  { path: 'movie/:id', component: MovieComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    MoviesComponent
+    MoviesComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,
