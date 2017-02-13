@@ -1,5 +1,16 @@
 # MovieDatabase
 
+API Key (v3 auth)
+
+c79f0a4b4f8b9c843e385c5cdb521ae1
+
+API Read Access Token (v4 auth)
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNzlmMGE0YjRmOGI5Yzg0M2UzODVjNWNkYjUyMWFlMSIsInN1YiI6IjU4YTE0ZTI4OTI1MTQxM2M2MjAwMDVhOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hjpaHQOURSmhJPSkeyFQ69-_LhM6x5_16qiPsPfHhGI
+
+Example API Request
+
+https://api.themoviedb.org/3/movie/550?api_key=c79f0a4b4f8b9c843e385c5cdb521ae1
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
 ## Development server
