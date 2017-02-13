@@ -37,10 +37,14 @@ export class MovieService {
 		return this.jsonp.get(`https://api.themoviedb.org/3/movie/${id}?&api_key=${this.apiKey}&callback=__ng_jsonp__.__req${this.times}.finished`)
 			.map(res => res.json());
 	}
-	// getMovie(id: string){
-	// 	return this.jsonp.get(`https://api.themoviedb.org/3/movie/${id}?&api_key=${this.apiKey}&callback=JSONP_CALLBACK`)
-	// 		.map(res => res.json());
-	// }
+
+	searchMovies(searchStr: string){
+		this.times += 1;
+		console.log('searchMovie', this.times);
+		return this.jsonp.get(`https://api.themoviedb.org/3/search/movie?&query=${searchStr}&sort_by=popularity.desc&api_key=${this.apiKey}&callback=__ng_jsonp__.__req${this.times}.finished`)
+        .map(res => res.json());
+	}
+
 
 
 }
