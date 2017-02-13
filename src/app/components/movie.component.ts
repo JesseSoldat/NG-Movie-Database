@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 
 export class MovieComponent implements OnInit {
 	movie: Object;
+	
 
 	constructor(private location: Location,
 							private router: ActivatedRoute,
